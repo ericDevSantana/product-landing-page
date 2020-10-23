@@ -23,9 +23,9 @@ export default function Home() {
 
         <div>
           
-          <div style={{textAlign: 'center', width: '40%', display: 'block', padding: '10% 0', float: 'left', marginLeft: '50px', fontSize: '1.25vw'}}>
+          <div style={{textAlign: 'center', width: '40%', display: 'block', padding: '0 0 10% 0', float: 'left', marginLeft: '50px', fontSize: '1.25vw'}}>
             
-            <h1 style={{ padding: '10% 0' }}>
+            <h1>
               Introducing our <a href="https://nextjs.org">Product!</a>
             </h1>
             
