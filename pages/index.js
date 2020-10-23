@@ -11,15 +11,36 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        
+        {/* <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
-        </p>
+        </p> */}
 
+        <div>
+          
+          <div style={{textAlign: 'center', width: '40%', display: 'block', padding: '10% 0', float: 'left', marginLeft: '50px', fontSize: '1.25vw'}}>
+            
+            <h1 style={{ padding: '10% 0' }}>
+              Introducing our <a href="https://nextjs.org">Product!</a>
+            </h1>
+            
+            <p style={{ textAlign: 'justify'}}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+          </div>
+
+          <img src='/product.jpg' style={{ width: '50%', display: 'block', float: 'right' }}></img>
+          
+        </div>
+
+        {/* Grid of Features*/}
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
