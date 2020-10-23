@@ -23,10 +23,10 @@ export default function Home() {
 
         <div>
           
-          <div style={{textAlign: 'center', width: '40%', display: 'block', padding: '0 0 10% 0', float: 'left', marginLeft: '50px', fontSize: '1.25vw'}}>
+          <div style={{textAlign: 'center', width: '50%', margin: '4% 0 0 0', display: 'block', padding: '4%', float: 'left', fontSize: '1.25vw'}}>
             
-            <h1>
-              Introducing our <a href="https://nextjs.org">Product!</a>
+            <h1 style={{margin: '0 0 10% 0'}}>
+              Introducing our product!
             </h1>
             
             <p style={{ textAlign: 'justify'}}>
@@ -36,7 +36,7 @@ export default function Home() {
             </p>
           </div>
 
-          <img src='/product.jpg' style={{ width: '50%', display: 'block', float: 'right' }}></img>
+          <img src='/product.jpg' style={{borderRadius: '20px', width: '50%', display: 'block', float: 'right' }}></img>
           
         </div>
 

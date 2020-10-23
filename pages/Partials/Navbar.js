@@ -4,7 +4,7 @@ export default function NavigationBar() {
 
     return (
         <>
-        <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+        <Navbar style={{backgroundColor: 'black', padding: '0 1% 0 1%', fontSize: '1.25vw'}} variant="dark" expand="lg" sticky="top">
             <Navbar.Brand href="/">My Product</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 
