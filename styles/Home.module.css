@@ -19,6 +19,16 @@
   align-items: center;
 }
 
+#home_section {
+  text-align: center;
+  width: 50%;
+  margin: 4% 0 0 0;
+  display: block;
+  padding: 4%;
+  float: left;
+  font-size: 1.25vw;
+}
+
 .footer {
   width: 100%;
   height: 50px;

@@ -23,7 +23,7 @@ export default function Home() {
 
         <div>
           
-          <div style={{textAlign: 'center', width: '50%', margin: '4% 0 0 0', display: 'block', padding: '4%', float: 'left', fontSize: '1.25vw'}}>
+          <div id={styles.home_section}>
             
             <h1 style={{margin: '0 0 10% 0'}}>
               Introducing our product!
@@ -36,8 +36,10 @@ export default function Home() {
             </p>
           </div>
 
-          <img src='/product.jpg' style={{borderRadius: '20px', width: '50%', display: 'block', float: 'right' }}></img>
-          
+          <div>
+            <img src='/product.jpg' style={{borderRadius: '20px', width: '50%', display: 'block', float: 'right' }}></img>
+          </div>
+
         </div>
 
         {/* Grid of Features*/}
