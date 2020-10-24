@@ -10,6 +10,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/*-------------------------------HOME SECTION BELOW-------------------------------*/}
+
       <section className={styles.home}>
         
         <div id={styles.home_content}>
@@ -29,6 +31,30 @@ export default function Home() {
           <img src='/product.jpg' />
           
         </div>
+
+      </section>
+
+      {/* -------------------------------FEATURES SECTION BELOW-------------------------------*/}
+
+      <section className={styles.features}>
+
+      </section>
+
+      {/* -------------------------------PRICING SECTION BELOW-------------------------------*/}
+
+      <section>
+
+      </section>
+
+      {/* -------------------------------ABOUT SECTION BELOW-------------------------------*/}
+
+      <section>
+
+      </section>
+
+      {/* -------------------------------CONTACT SECTION BELOW-------------------------------*/}
+
+      <section>
 
       </section>
 
