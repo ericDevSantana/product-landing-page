@@ -1,4 +1,5 @@
-import {Navbar, Nav} from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
+import styles from '../../styles/Home.module.css'
 
 export default function NavigationBar() {
 
@@ -10,7 +11,7 @@ export default function NavigationBar() {
                 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link style={{color: 'white'}} href="#">Home</Nav.Link>
+                        <Nav.Link style={{color: 'white'}} href='#home'>Home</Nav.Link>
                         <Nav.Link href="#">Features</Nav.Link>
                         <Nav.Link href="#">Pricing</Nav.Link>
                         <Nav.Link href="#">About</Nav.Link>
