@@ -1,6 +1,5 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   background-color: black;
   color: azure;
@@ -9,24 +8,39 @@
   align-items: center;
 }
 
-.main {
-  padding: 5rem 0;
-  width: 80%;
+.home {
+  width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  float: left;
 }
 
-#home_section {
+#home_content {
   text-align: center;
-  width: 50%;
-  margin: 4% 0 0 0;
-  display: block;
   padding: 4%;
-  float: left;
   font-size: 1.25vw;
+}
+
+#home_content > #home_text {
+  float: left;
+  width: 50%;
+  margin-top: 8%;
+  padding: 4%;
+}
+
+#home_content h1 {
+  margin: 0 0 10% 0;
+}
+
+#home_content p {
+  text-align: justify;
+}
+
+#home_content img{
+  width: 50%;
 }
 
 .footer {
