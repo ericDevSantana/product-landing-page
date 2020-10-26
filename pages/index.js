@@ -9,13 +9,15 @@ export default function Home() {
     var text_element = document.getElementById(styles.home_text);
 
     window.onscroll = (e) => {
-      console.log(90 - window.scrollY);
 
       if (100 - window.scrollY > 0) {
+
         img_element.style.filter = 'brightness(' + (100 - window.scrollY) + '%)';
         text_element.style.filter = 'brightness(' + (100 - window.scrollY) + '%)';
+
         img_element.style.top = 90 - window.scrollY + 'px';
-        text_element.style.left = 90 - window.scrollY + 'px';
+        text_element.style.left = 150 - window.scrollY + 'px';
+
       } else {
         img_element.style.filter = 'brightness(0%)';
         text_element.style.filter = 'brightness(0%)';

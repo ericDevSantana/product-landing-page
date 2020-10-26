@@ -10,7 +10,7 @@
 
 .home {
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   /* flex: 1;
   display: flex;
   flex-direction: column;
@@ -27,8 +27,8 @@
 
 #home_content > #home_text {
   width: 50%;
-  left: 100px;
-  top: 150px;
+  left: 150px;
+  top: 250px;
   padding: 4%;
   position: absolute;
 }
@@ -43,8 +43,9 @@
 
 #home_content img{
   position: absolute;
-  width: 45%;
-  /* top: 50px; */
+  width: 50%;
+  right: 0;
+  top: 90px;
 }
 
 .features {
