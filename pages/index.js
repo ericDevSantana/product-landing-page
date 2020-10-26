@@ -9,10 +9,17 @@ export default function Home() {
     var text_element = document.getElementById(styles.home_text);
 
     window.onscroll = (e) => {
-      img_element.style.filter = 'brightness(' + (90 - window.scrollY) + '%)';
-      text_element.style.filter = 'brightness(' + (90 - window.scrollY) + '%)';
-      // img_element.style.right = (-window.scrollY*1.5) + 'px';
-      
+      console.log(90 - window.scrollY);
+
+      if (100 - window.scrollY > 0) {
+        img_element.style.filter = 'brightness(' + (100 - window.scrollY) + '%)';
+        text_element.style.filter = 'brightness(' + (100 - window.scrollY) + '%)';
+        img_element.style.top = 90 - window.scrollY + 'px';
+        text_element.style.left = 90 - window.scrollY + 'px';
+      } else {
+        img_element.style.filter = 'brightness(0%)';
+        text_element.style.filter = 'brightness(0%)';
+      }
     }
 
   }, []);
@@ -53,9 +60,24 @@ export default function Home() {
 
       <section className={styles.features}>
         
-        <div>
-
+        <div>  
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. 
+          </p>
           
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. 
+          </p>
+          
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. 
+          </p>
           
         </div>
 
