@@ -6,8 +6,13 @@ export default function Home() {
   
   useEffect(() => {
     var img_element = document.getElementById('myImg');
+    var text_element = document.getElementById(styles.home_text);
+
     window.onscroll = (e) => {
-      img_element.style.filter = 'brightness('+(90 - window.scrollY)+'%)';
+      img_element.style.filter = 'brightness(' + (90 - window.scrollY) + '%)';
+      text_element.style.filter = 'brightness(' + (90 - window.scrollY) + '%)';
+      // img_element.style.right = (-window.scrollY*1.5) + 'px';
+      
     }
 
   }, []);
@@ -38,7 +43,7 @@ export default function Home() {
             </p>
           </div>  
 
-          <img id='myImg' src='/product.jpg' />
+          <img id='myImg' src='/product.png' />
           
         </div>
 
@@ -50,7 +55,7 @@ export default function Home() {
         
         <div>
 
-          <img src='/product.jpg' />
+          
           
         </div>
 
