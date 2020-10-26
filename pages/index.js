@@ -1,7 +1,17 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  
+  useEffect(() => {
+    var img_element = document.getElementById('myImg');
+    window.onscroll = (e) => {
+      img_element.style.filter = 'brightness('+(90 - window.scrollY)+'%)';
+    }
+
+  }, []);
+
   return (
     <div className={styles.container}>
       
@@ -28,7 +38,7 @@ export default function Home() {
             </p>
           </div>  
 
-          <img src='/product.jpg' />
+          <img id='myImg' src='/product.jpg' />
           
         </div>
 
@@ -37,45 +47,19 @@ export default function Home() {
       {/* -------------------------------FEATURES SECTION BELOW-------------------------------*/}
 
       <section className={styles.features}>
-<div id={styles.home_content}>
-          
-          <div id={styles.home_text}>
-            <h1>
-              Introducing our product!
-            </h1>
-            
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. 
-            </p>
-          </div>  
+        
+        <div>
 
           <img src='/product.jpg' />
           
         </div>
+
       </section>
 
       {/* -------------------------------PRICING SECTION BELOW-------------------------------*/}
 
       <section>
-<div id={styles.home_content}>
-          
-          <div id={styles.home_text}>
-            <h1>
-              Introducing our product!
-            </h1>
-            
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. 
-            </p>
-          </div>  
 
-          <img src='/product.jpg' />
-          
-        </div>
       </section>
 
       {/* -------------------------------ABOUT SECTION BELOW-------------------------------*/}

@@ -40,11 +40,18 @@
 }
 
 #home_content img{
-  width: 50%;
+  position: absolute;
+  width: 40%;
+  right: 10%;
 }
 
 .features {
   background-color: chocolate;
+}
+
+.features img {
+  height: 250px;
+  width: 250px;
 }
 
 .footer {
