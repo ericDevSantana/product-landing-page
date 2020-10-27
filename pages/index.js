@@ -38,7 +38,7 @@ export default function Home() {
 
       <section id='home' className={styles.home}>
         
-        <div id={styles.home_content}>
+        {/* <div id={styles.home_content}> */}
           
           <div id={styles.home_text}>
             <h1>
@@ -54,7 +54,7 @@ export default function Home() {
 
           <img id='myImg' src='/product.png' />
           
-        </div>
+        {/* </div> */}
 
       </section>
 

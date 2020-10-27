@@ -17,6 +17,10 @@
   justify-content: center;
   align-items: center; */
   background-color: black;
+  text-align: center;
+  padding: 4%;
+  margin-top: -45px;
+  font-size: 1.25vw;
 }
 
 #home_content {
@@ -25,7 +29,7 @@
   font-size: 1.25vw;
 }
 
-#home_content > #home_text {
+.home > #home_text {
   width: 50%;
   left: 150px;
   top: 250px;
@@ -33,15 +37,15 @@
   position: absolute;
 }
 
-#home_content h1 {
+.home h1 {
   margin: 0 0 10% 0;
 }
 
-#home_content p {
+.home p {
   text-align: center;
 }
 
-#home_content img{
+.home img{
   position: absolute;
   width: 50%;
   right: 0;
