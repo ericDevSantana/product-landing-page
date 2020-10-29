@@ -56,6 +56,15 @@
   background-color: black;
   width: 100%;
   min-height: 100vh;
+  text-align: center;
+}
+
+.features h1 {
+  margin: 4% 0 10% 0;
+  font-size: 4.75vw;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .features img {

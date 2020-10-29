@@ -60,8 +60,12 @@ export default function Home() {
 
       {/* -------------------------------FEATURES SECTION BELOW-------------------------------*/}
 
-      <section className={styles.features}>
-
+      <section id='features' className={styles.features}>
+        <div>
+          <h1>
+              NEW FEATURES
+          </h1>
+        </div>
       </section>
 
       {/* -------------------------------PRICING SECTION BELOW-------------------------------*/}
