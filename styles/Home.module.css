@@ -53,18 +53,14 @@
 }
 
 .features {
-  background-color: chocolate;
+  background-color: black;
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .features img {
   height: 250px;
   width: 250px;
-}
-
-.features p {
-  color: chocolate;
 }
 
 .footer {
