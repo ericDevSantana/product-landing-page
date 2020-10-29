@@ -1,13 +1,18 @@
 import Head from 'next/head'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const [y_scroll, setScroll] = useState(0);
   
   useEffect(() => {
     var img_element = document.getElementById('myImg');
     var text_element = document.getElementById(styles.home_text);
 
+    // var features_h1 = documnet.getElementById('features_h1');
+    // Fade in scrollY = 100, Brightness = 0%
+    // Fade in scrollY = 250, Brightness = 100%
+    
     window.onscroll = (e) => {
 
       if (100 - window.scrollY > 0) {
@@ -22,6 +27,8 @@ export default function Home() {
         img_element.style.filter = 'brightness(0%)';
         text_element.style.filter = 'brightness(0%)';
       }
+
+      setScroll(Number(window.scrollY));
     }
 
   }, []);
@@ -63,7 +70,7 @@ export default function Home() {
       <section id='features' className={styles.features}>
         <div>
           <h1>
-              NEW FEATURES
+              NEW FEATURES {y_scroll}
           </h1>
         </div>
       </section>
