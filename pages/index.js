@@ -8,10 +8,7 @@ export default function Home() {
   useEffect(() => {
     var img_element = document.getElementById('myImg');
     var text_element = document.getElementById(styles.home_text);
-
-    // var features_h1 = documnet.getElementById('features_h1');
-    // Fade in scrollY = 100, Brightness = 0%
-    // Fade in scrollY = 250, Brightness = 100%
+    var features_h1 = document.getElementById('features_h1');
     
     window.onscroll = (e) => {
 
@@ -28,6 +25,12 @@ export default function Home() {
         text_element.style.filter = 'brightness(0%)';
       }
 
+      if (window.scrollY > 100) {
+        features_h1.style.filter = 'brightness(' + (window.scrollY * 0.17) + '%)';
+      } else {
+        features_h1.style.filter = 'brightness(0%)';
+      }
+
       setScroll(Number(window.scrollY));
     }
 
@@ -37,7 +40,7 @@ export default function Home() {
     <div className={styles.container}>
       
       <Head>
-        <title>My Product</title>
+        <title>My Product {y_scroll}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -69,8 +72,8 @@ export default function Home() {
 
       <section id='features' className={styles.features}>
         <div>
-          <h1>
-              NEW FEATURES
+          <h1 id='features_h1'>
+              NEW FEATURES 
           </h1>
         </div>
       </section>
