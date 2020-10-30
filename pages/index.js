@@ -13,21 +13,25 @@ export default function Home() {
     window.onscroll = (e) => {
 
       if (100 - window.scrollY > 0) {
-
+        // Fade out effect
         img_element.style.filter = 'brightness(' + (100 - window.scrollY) + '%)';
         text_element.style.filter = 'brightness(' + (100 - window.scrollY) + '%)';
 
+        // Movement
         img_element.style.top = 90 - window.scrollY + 'px';
         text_element.style.left = 150 - window.scrollY + 'px';
 
       } else {
+        // Set brightness to 0 after certain point
         img_element.style.filter = 'brightness(0%)';
         text_element.style.filter = 'brightness(0%)';
       }
 
       if (window.scrollY > 100) {
+        // Fade in effect in Features
         features_h1.style.filter = 'brightness(' + (window.scrollY * 0.17) + '%)';
       } else {
+        // Set brightness to 0 after certain point
         features_h1.style.filter = 'brightness(0%)';
       }
 
@@ -40,7 +44,7 @@ export default function Home() {
     <div className={styles.container}>
       
       <Head>
-        <title>My Product {y_scroll}</title>
+        <title>My Product</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -78,10 +82,10 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-            <div className={styles.card}>Feature 1</div>
-            <div className={styles.card}>Feature 2</div>
-            <div className={styles.card}>Feature 3</div>
-            <div className={styles.card}>Feature 4</div>
+            <div id='feature_card' className={styles.card}>Feature 1</div>
+            <div id='feature_card' className={styles.card}>Feature 2</div>
+            <div id='feature_card' className={styles.card}>Feature 3</div>
+            <div id='feature_card' className={styles.card}>Feature 4</div>
           </div>
       </section>
 
