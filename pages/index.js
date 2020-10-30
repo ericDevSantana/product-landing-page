@@ -70,7 +70,7 @@ export default function Home() {
       <section id='features' className={styles.features}>
         <div>
           <h1>
-              NEW FEATURES {y_scroll}
+              NEW FEATURES
           </h1>
         </div>
       </section>
