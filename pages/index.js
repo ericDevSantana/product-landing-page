@@ -73,9 +73,16 @@ export default function Home() {
       <section id='features' className={styles.features}>
         <div>
           <h1 id='features_h1'>
-              NEW FEATURES 
+            NEW FEATURES 
           </h1>
         </div>
+
+        <div className={styles.grid}>
+            <div className={styles.card}>Feature 1</div>
+            <div className={styles.card}>Feature 2</div>
+            <div className={styles.card}>Feature 3</div>
+            <div className={styles.card}>Feature 4</div>
+          </div>
       </section>
 
       {/* -------------------------------PRICING SECTION BELOW-------------------------------*/}
