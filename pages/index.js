@@ -1,7 +1,7 @@
+import { Carousel } from 'react-bootstrap'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
-import { Carousel} from 'react-bootstrap'
 
 export default function Home() {
   const [y_scroll, setScroll] = useState(0);
@@ -92,39 +92,45 @@ export default function Home() {
 
       {/* -------------------------------PRICING SECTION BELOW-------------------------------*/}
 
-      <section className={styles.pricing}>
+      <section id='testimonials' className={styles.testimonial}>
         
-        <Carousel style={{marginTop: '4%'}}>
+        <h1 style={{fontSize: '5vw'}}>
+            OUR CONSUMERS
+        </h1>
+        
+        <Carousel style={{marginTop: '5%'}}>
           <Carousel.Item interval={1000}>
             <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=First slide&bg=373940"
-              alt="First slide"
-            />
+                   style={{height: '250px', width: '250px', marginBottom: '200px'}}
+                    src="/avatar.png"
+                    alt="First slide"
+                />
             <Carousel.Caption>
-              <h3>First slide label</h3>
+              <h3>First Testimonial</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
           </Carousel.Item>
+
           <Carousel.Item interval={500}>
             <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=Second slide&bg=282c34"
-              alt="Third slide"
-            />
+                   style={{height: '250px', width: '250px', marginBottom: '200px'}}
+                    src="/avatar.png"
+                    alt="First slide"
+                />
             <Carousel.Caption>
-              <h3>Second slide label</h3>
+              <h3>Second Testimonial</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
           </Carousel.Item>
+
           <Carousel.Item>
             <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=Third slide&bg=20232a"
-              alt="Third slide"
-            />
+                   style={{height: '250px', width: '250px', marginBottom: '200px'}}
+                    src="/avatar.png"
+                    alt="First slide"
+                />
             <Carousel.Caption>
-              <h3>Third slide label</h3>
+              <h3>Third Testimonial</h3>
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </Carousel.Caption>
           </Carousel.Item>

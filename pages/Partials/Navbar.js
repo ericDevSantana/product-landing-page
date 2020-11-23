@@ -11,10 +11,9 @@ export default function NavigationBar() {
                 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link style={{color: 'white'}} href='#home'>Home</Nav.Link>
+                        <Nav.Link href='#home'>Home</Nav.Link>
                         <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#">Pricing</Nav.Link>
-                        <Nav.Link href="#">About</Nav.Link>
+                        <Nav.Link href="#testimonials">Consumers</Nav.Link>
                         <Nav.Link href="#">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
