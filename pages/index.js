@@ -142,7 +142,7 @@ export default function Home() {
 
       <section id='contact' className={styles.contact}>
         
-        <h1>
+        <h1 style={{textAlign: 'center', fontSize: '5vw', marginBottom: '4%'}}>
           Contact Us
         </h1>
         

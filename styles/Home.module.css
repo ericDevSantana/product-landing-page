@@ -85,10 +85,10 @@
 
 .contact {
   background-color: black;
-  padding-top: 3%;
+  padding: 3%;
   width: 100%;
   min-height: 100vh;
-  text-align: center;
+  text-align: left;
 }
 
 /* <-------------------------------------FOOTER---------------------------------------> */
