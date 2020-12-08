@@ -5,6 +5,29 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const [y_scroll, setScroll] = useState(0);
+  const [contactMessage, setMessage] = useState({
+        subject: "",
+        message: ""
+    });
+
+    function handleChanges(event) {
+        const { name, value } = event.target;
+
+        setMessage((prevValue) => {
+            return {
+                ...prevValue,
+                [name]: value
+            }
+        });
+    }
+
+  function handleSubmit(event) {
+      
+        if (contactMessage.subject !== "" && contactMessage.message !== "") {
+            window.open("https://mail.google.com/mail/?view=cm&fs=1&tf=1&su=" + contactMessage.subject + "&to=example@outlook.com&body=" + contactMessage.message);
+    
+        }
+    }
   
   useEffect(() => {
     var img_element = document.getElementById('myImg');
@@ -149,22 +172,17 @@ export default function Home() {
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Control type="email" placeholder="Enter email" value={contactMessage.subject} onChange={handleChanges} name="subject" required />
             <Form.Text className="text-muted">
               We'll never share your email with anyone else.
             </Form.Text>
           </Form.Group>
 
-          <Form.Group controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+          <Form.Group controlId="exampleForm.ControlTextarea1">
+            <Form.Label>Message</Form.Label>
+            <Form.Control style={{resize: 'none'}} as="textarea" rows="8" value={contactMessage.message} onChange={handleChanges} name="message" required/>
           </Form.Group>
-          <Form.Group controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
+          <Button type="submit" variant="secondary" onClick={handleSubmit}>Send</Button>{' '}
         </Form>
       </section>
 
