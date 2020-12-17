@@ -1,4 +1,8 @@
+## Simple Product Landing Page Example
+
 This is a fantasy product landing page [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+![alt-text]()
 
 ## Getting Started
 
