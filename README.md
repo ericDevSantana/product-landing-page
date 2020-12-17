@@ -2,7 +2,10 @@
 
 This is a fantasy product landing page [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![alt-text]()
+![alt-text](https://github.com/ericDevSantana/product-landing-page/blob/master/public/screenshots/screen1.png)
+![alt-text](https://github.com/ericDevSantana/product-landing-page/blob/master/public/screenshots/screen2.png)
+![alt-text](https://github.com/ericDevSantana/product-landing-page/blob/master/public/screenshots/screen3.png)
+![alt-text](https://github.com/ericDevSantana/product-landing-page/blob/master/public/screenshots/screen4.png)
 
 ## Getting Started
 
