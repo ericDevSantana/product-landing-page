@@ -1,5 +1,4 @@
 import { Navbar, Nav } from 'react-bootstrap'
-import styles from '../../styles/Home.module.css'
 
 export default function NavigationBar() {
 
@@ -14,7 +13,7 @@ export default function NavigationBar() {
                         <Nav.Link href='#home'>Home</Nav.Link>
                         <Nav.Link href="#features">Features</Nav.Link>
                         <Nav.Link href="#testimonials">Consumers</Nav.Link>
-                        <Nav.Link href="#">Contact</Nav.Link>
+                        <Nav.Link href="#contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
         </Navbar>
